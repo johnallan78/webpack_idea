@@ -17,10 +17,11 @@ UI.prototype = {
     element.appendChild(pTag);
   },
 
-  createReview: function(li, review){
+  createReview: function(li, review, genre){
     this.appendText(li, review.comment, "Comment: ");
     this.appendText(li, review.rating, "Rating: ");
     this.appendText(li, review.author, "Author: ");
+    
   },
 
   render: function(films) {
